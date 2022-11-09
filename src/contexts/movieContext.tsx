@@ -18,13 +18,7 @@ export const MovieProvider: FC<ProviderProps> = ({ children }) => {
   const [movies, setMovie] = useState<mInterface[]>([]);
 
   const saveMovie = (movie: mInterface) => {
-    const newMovie: mInterface = {
-      title: movie.title,
-      year: movie.year,
-      director: movie.director,
-      writer: movie.writer,
-    };
-    setMovie([...movies, newMovie]);
+    setMovie([...movies, movie]);
   };
 
   return (

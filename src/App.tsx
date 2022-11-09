@@ -1,10 +1,10 @@
-import './App.css';
-import CreateMovie from './components/movies/create';
+import "./App.css";
+import CreateMovie from "./components/movies/create";
 
 function App() {
   return (
     <div className="App">
-       <CreateMovie/>
+      <CreateMovie />
     </div>
   );
 }

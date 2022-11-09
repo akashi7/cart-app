@@ -5,5 +5,4 @@ export const createMovieValidationsSchema = Yup.object().shape({
   year: Yup.number().required("Year is required"),
   director: Yup.string().required("Director is required"),
   writer: Yup.string().required("Writer is required"),
-  genres: Yup.array().of(Yup.string()).required("Genres are required"),
 });
